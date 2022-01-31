@@ -58,7 +58,7 @@ class Cracker(object):
     
     def crack(self):
         for val in self.known:
-            nextval = z3.fpToFP(z3.RoundTowardZero(), next(self) & 0x1fffffffffffff, z3.Float64())/(2**53)
+            nextval = z3.fpToFP(z3.get_default_rounding_mode(), next(self) & 0x1fffffffffffff, z3.Float64())/(2**53)
             self.solver.add(nextval == val)
 
         if self.solver.check() != z3.sat:
