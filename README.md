@@ -18,8 +18,8 @@ After that type:
 ```
 $ python xorshift128plus-cracker.py 
 ```
-\+ the 3 numbers that you generated. **DON'T FORGET TO REMOVE SPACES.** 
+\+ the 3 numbers that you generated.
 
-Example: ```$ python xorshift128plus-cracker.py 0.20984993117622008,0.031103469229328495,0.6396434426372385```
+Example: ```$ python xorshift128plus-cracker.py 0.20984993117622008 0.031103469229328495 0.6396434426372385```
 ## 4. Done
 After that the script will print 15 (this number can be changed) numbers that will be generated next.
